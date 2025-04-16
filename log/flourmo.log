@@ -1,0 +1,172 @@
+2025-04-16T16:11:05.838+08:00  INFO 72212 --- [flourmo] [main] com.kinopio.flourmo.FlourMoApplication   : Starting FlourMoApplication using Java 21.0.6 with PID 72212 (/Users/tangtonglong/GitRepository/flourmo/target/classes started by tangtonglong in /Users/tangtonglong/GitRepository/flourmo)
+2025-04-16T16:11:05.841+08:00 DEBUG 72212 --- [flourmo] [main] com.kinopio.flourmo.FlourMoApplication   : Running with Spring Boot v3.5.0-SNAPSHOT, Spring v6.2.6-SNAPSHOT
+2025-04-16T16:11:05.842+08:00  INFO 72212 --- [flourmo] [main] com.kinopio.flourmo.FlourMoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T16:11:06.775+08:00  INFO 72212 --- [flourmo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8087 (http)
+2025-04-16T16:11:06.799+08:00  INFO 72212 --- [flourmo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T16:11:06.800+08:00  INFO 72212 --- [flourmo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-04-16T16:11:06.857+08:00  INFO 72212 --- [flourmo] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-04-16T16:11:06.858+08:00  INFO 72212 --- [flourmo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 958 ms
+2025-04-16T16:11:07.465+08:00  INFO 72212 --- [flourmo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8087 (http) with context path '/api'
+2025-04-16T16:11:07.520+08:00  INFO 72212 --- [flourmo] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-16T16:11:07.576+08:00  INFO 72212 --- [flourmo] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-16T16:11:07.745+08:00  INFO 72212 --- [flourmo] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.0
+2025-04-16T16:11:07.746+08:00  INFO 72212 --- [flourmo] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 84caaa6e9da06435
+2025-04-16T16:11:07.746+08:00  INFO 72212 --- [flourmo] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744791067743
+2025-04-16T16:11:07.750+08:00  INFO 72212 --- [flourmo] [main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to topic(s): ccis_msg
+2025-04-16T16:11:07.774+08:00  INFO 72212 --- [flourmo] [main] com.kinopio.flourmo.FlourMoApplication   : Started FlourMoApplication in 2.531 seconds (process running for 2.96)
+2025-04-16T16:11:08.057+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:08.058+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:08.058+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:08.154+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:08.154+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:08.155+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:08.309+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:08.310+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:08.310+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:08.540+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:08.541+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:08.541+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:08.899+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:08.899+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:08.899+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:09.874+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:09.874+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:09.874+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:10.730+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:10.730+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:10.731+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:11.598+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:11.598+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:11.599+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:12.600+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:12.600+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:12.601+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:13.584+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:13.584+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:13.585+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:14.601+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:14.602+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:14.602+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:15.622+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:15.622+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:15.622+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:16.623+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:16.624+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:16.624+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:17.668+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:17.668+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:17.668+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:18.501+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:18.502+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:18.502+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:19.533+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:19.534+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:19.534+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:20.506+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:20.506+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:20.507+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:21.551+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:21.551+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:21.552+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-04-16T16:11:22.553+08:00  INFO 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Node -1 disconnected.
+2025-04-16T16:11:22.553+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-04-16T16:11:22.553+08:00  WARN 72212 --- [flourmo] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-my-group-1, groupId=my-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected

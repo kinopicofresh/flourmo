@@ -16,6 +16,35 @@ spring:
       enable-auto-commit: false  # 禁用自动提交
     listener:
       ack-mode: manual_immediate
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_db?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: Ttl@20241128
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      pool-name: HikariPool
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 600000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+      connection-test-query: SELECT 1
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 
+      database: 0
+---
+redisson:
+  address: redis://${spring.data.redis.host}:${spring.data.redis.port}
+  password: ${spring.data.redis.password}
+  database: ${spring.data.redis.database}
+  connection-pool-size: 10
+  connection-minimum-idle-size: 5
+  idle-connection-timeout: 10000
+  connect-timeout: 10000
+  timeout: 3000 
 
 logging:
   file: 

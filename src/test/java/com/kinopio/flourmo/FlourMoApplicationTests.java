@@ -1,4 +1,4 @@
-package com.kinopio.flour.flourmo;
+package com.kinopio.flourmo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

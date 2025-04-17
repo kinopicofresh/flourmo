@@ -47,9 +47,4 @@ redisson:
   timeout: 3000 
 
 logging:
-  file: 
-    name: log/flourmo.log
-  level:
-    com:
-      kinopio:
-        flourmo: debug
+  config: classpath:log4j2.xml

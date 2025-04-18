@@ -35,6 +35,27 @@ spring:
       port: 6379
       password: 
       database: 0
+      jedis:
+        pool:
+          enabled: true
+          max-idle: 500
+          min-idle: 0
+          max-active: 8
+          max-wait: -1
+
+  redis:
+    #    需要持久化的，用来存放热门点击等
+    app:
+      host: 127.0.0.1
+      password:
+      database: 0
+      port: 6379
+      pool:
+        max-idle: 500
+        min-idle: 0
+        max-active: 8
+        max-wait: -1
+      timeout: 100
 ---
 redisson:
   address: redis://${spring.data.redis.host}:${spring.data.redis.port}

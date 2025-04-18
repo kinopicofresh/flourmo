@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
+    <Properties>
+        <Property name="log_base_dir">logs</Property>
+        <Property name="log_name_prefix">flourmo</Property>
+        <!--日志格式-文件-->
+        <property name="LOG_FORMAT">[%d{yyyy-MM-dd HH:mm:ss.SSS}] %p %t %c[%L] - %m %n</property>
+        <!--日志格式-控制台-->
+        <property name="LOG_FORMAT_CONSOLE">%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{%-5level} [%t] %highlight{%c{1.}.%M(%L)}: %msg%n%throwable</property>
+        <!-- <property name="LOG_FORMAT_CONSOLE">%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{%-5level} [%t] %highlight{%c{1.}.%l}: %msg%n%throwable</property> -->
+        <Property name="BASE_LOG_FORMAT">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Property>
+            
+    </Properties>
     <Appenders>
         <!-- 控制台输出 -->
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+            <PatternLayout pattern="${LOG_FORMAT_CONSOLE}" />
         </Console>
 
         <!-- 文件输出 -->
-        <RollingFile name="File" fileName="logs/flourmo.log" filePattern="logs/flourmo-%d{yyyy-MM-dd}.log.gz">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+        <RollingFile name="File" fileName="${log_base_dir}/${log_name_prefix}.log" 
+            filePattern="${log_base_dir}/$${date:yyyy-MM}/${log_name_prefix}-app-%d{yyyy-MM-dd-HH}-%i.log.gz">
+            <PatternLayout pattern="${LOG_FORMAT_CONSOLE}" />
             <Policies>
                 <TimeBasedTriggeringPolicy interval="24" />
                 <SizeBasedTriggeringPolicy size="10MB" />
             </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${log_base_dir}" maxDepth="2">
+                    <IfLastModified age="P7D" />
+                    <IfFileName glob="*/${log_name_prefix}-app-*.log.gz" />
+                </Delete>
+            </DefaultRolloverStrategy>
         </RollingFile>
     </Appenders>
 
@@ -26,7 +44,7 @@
         <!-- Spring 框架日志 -->
         <Logger name="org.springframework" level="error" >
             <AppenderRef ref="Console" />
-<!--            <AppenderRef ref="File" />-->
+            <AppenderRef ref="File" />
         </Logger>
 
         <!-- 根日志 -->
